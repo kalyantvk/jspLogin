@@ -1,0 +1,106 @@
+<html>
+    <style>
+        input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=email], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 8%;
+    background-color: #1CE3CC;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    width: 8%;
+    background-color: #FE1739;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+input[type=reset]:hover {
+    background-color: #FE4B66;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+        body{
+                background-image: url("login-bg.jpg");
+                 background-repeat: no-repeat;
+                 
+                 background-origin: content-box;
+                 
+                 background-size: 1500px 1000px;
+               
+
+    }
+    h1 {
+    color: white;
+    text-align: center;
+   
+}
+form{
+    text-align: center;
+    color: yellow;
+    
+   
+}
+
+    </style>
+    
+    <br>
+    <br>
+    <br>
+    <h1>Registration Form</h1>
+    <form action="validate.jsp">
+        <input type="text" name="fname" placeholder="First Name" maxlength="10" required><br><br>
+        <input type="text" name="lname" placeholder="Last Name" maxlength="10" required><br><br>
+                <input type="text" name="uname" placeholder="choose user Name" maxlength="30" required><br><br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br><br>
+        <input type="email" name="email" autocomplete="off" placeholder="E-mail" required><br><br>
+        <input type="password" name="passwd" placeholder="password" required><br><br>
+        <input type="submit" value="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset">
+             
+             
+        
+    </form>
+</html>
